@@ -288,6 +288,47 @@ nav h4 {
     flex-direction: column;
     gap: 16px;
 }
+
+/* footer section */
+
+.footer-container{
+    background:url(assets/footer-bg.png) center no-repeat;
+    background-size: cover;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container h4{
+    margin-bottom: 34px;
+}
+.footer-icons{
+    display: flex; 
+    gap: 42px;
+    margin-bottom: 34px;
+}
+.footer-icon{
+    display: flex;
+    gap :10px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive media quries */
 
 @media screen and (max-width:576px) {
