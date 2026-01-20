@@ -3,6 +3,9 @@
     padding: 0;
 }
 /* shared style */
+.none{
+    display: none;
+}
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -17,28 +20,28 @@
 }
 
 .header-text1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
 }
 .header-text2{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
 
 }
 .sub-header{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .text-op06{
-    font-size: 16px;
+    font-size: 1rem;
     opacity: 0.6;
 }
 .text-op08{
-    font-size: 16px;
+    font-size: 1rem;
     opacity: 0.8;
 }
 .primary-btn{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     padding: 12.5px 16px;
     color:rgba(255,255,255,1);
@@ -51,9 +54,11 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 16px 0;
+    
 }
 nav h4{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight:700;
 }
 .nav-link{
@@ -61,5 +66,23 @@ nav h4{
     display: flex;
     justify-content: space-evenly;
     gap:32px;
-    padding: 36.5px 0;
+}
+
+
+
+
+
+/* responsive media quries */
+
+@media screen and (max-width:576px) {
+    .nav-link, nav .primary-btn{
+        display: none;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 16px 20px;
+    }
 }
