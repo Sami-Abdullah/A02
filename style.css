@@ -51,16 +51,31 @@
 }
 
 .primary-btn {
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
     font-size: 1rem;
     font-weight: 600;
     padding: 12.5px 16px;
     color: rgba(255, 255, 255, 1);
     border-radius: 100px;
+    border: none;
 }
 
 /* main style */
 
 /* ----------navbar section--------- */
+.gradient1 {
+    background: linear-gradient(to bottom left,
+            rgba(247, 233, 63, 1),
+            rgba(251, 9, 180, 1),
+            rgba(145, 0, 248, 1));
+}
+.green{
+    background: none;
+    color: var(--green-font);
+    border: 1px solid var(--green-font);
+    gap: 9px ;
+}
+
 nav {
     background: var(--primary-bg);
     display: flex;
@@ -115,7 +130,6 @@ nav h4 {
 /* -------------about poodcast------------ */
 
 .podcast-container {
-    border-top: 1px solid white;
     background-color: var(--primary-bg);
     padding: 50px 200px 120px 200px;
     text-align: center;
@@ -222,77 +236,91 @@ nav h4 {
     margin-bottom: 40px;
 
 }
-.featured-card-container{
+
+.featured-card-container {
     display: grid;
-    grid-template-columns: repeat(3,380px);
+    grid-template-columns: repeat(3, 380px);
     gap: 30px;
 }
-.icon-clock{
+
+.icon-clock {
     width: 16px;
     height: 16px;
 }
-.clock-time{
+
+.clock-time {
     color: var(--green-font);
     font-size: 16px;
 }
-.clock-container{
+
+.clock-container {
     margin-top: 12px;
     display: flex;
-    gap:6px;
+    gap: 6px;
 }
-.frame-content h4{
+
+.frame-content h4 {
     text-align: left;
 }
+
 /* ------------host section---------  */
-.host-container{
+.host-container {
     background: var(--primary-bg);
     padding: 0 200px 120px 200px;
 }
-.host-container h4{
+
+.host-container h4 {
     margin-bottom: 40px;
     text-align: center;
 }
-.host-card{
+
+.host-card {
     background: var(--secondary-bg);
     display: flex;
 
     align-items: center;
-    gap:24px;
+    gap: 24px;
     padding: 40px;
 
 }
-.host-img{
+
+.host-img {
     height: 200px;
-    width:200px;
+    width: 200px;
 }
-.host-icons{
+
+.host-icons {
     display: flex;
     gap: 8px;
 }
-.social{
+
+.social {
     width: 15px;
     height: 15px;
 }
-.icons-h{
+
+.icons-h {
     height: 15px;
     width: 15px;
     border: 1px solid rgba(83, 60, 114, 1);
     border-radius: 50px;
     padding: 5px;
 }
-.host-des p{
+
+.host-des p {
     line-height: 1.5;
 }
-.host-des{
-        display: flex;
+
+.host-des {
+    display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
 /* footer section */
 
-.footer-container{
-    background:url(assets/footer-bg.png) center no-repeat;
+.footer-container {
+    background: url(assets/footer-bg.png) center no-repeat;
     background-size: cover;
     padding: 120px;
     display: flex;
@@ -300,17 +328,20 @@ nav h4 {
     justify-content: center;
     align-items: center;
 }
-.footer-container h4{
+
+.footer-container h4 {
     margin-bottom: 34px;
 }
-.footer-icons{
-    display: flex; 
+
+.footer-icons {
+    display: flex;
     gap: 42px;
     margin-bottom: 34px;
 }
-.footer-icon{
+
+.footer-icon {
     display: flex;
-    gap :10px
+    gap: 10px
 }
 
 
@@ -349,7 +380,7 @@ nav h4 {
 
     .hero-container {
         background: url(assets/hero-bg.png) center 50px no-repeat;
-        background-size: contain;
+        background-size: cover;
         gap: 24px;
         padding: 40px 20px;
     }
@@ -357,13 +388,47 @@ nav h4 {
     .mic-img {
         width: 80px;
         height: 80px;
+        top: 190px;
     }
-
     .hero-banner-img {
         width: 200px;
         height: 200px;
+        padding: 40px 120px 24px 120px;
     }
-
-
-
+    .hero-banner-img img, .mic-img img{
+        width: 100%;
+    }
+    .podcast-container{
+        padding: 40px 20px;
+    }
+    .review-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .why-container, .featured-container{
+        padding: 40px 20px;
+    }
+    .card-grid, .featured-card-container{
+        grid-template-columns: 1fr;
+    }
+    .featured-card-container iframe{
+        width: 100%;
+    }
+    .host-container{
+        padding: 40px 20px;
+    }
+    .host-card{
+        flex-direction: column;
+        
+    }
+    .host-des{
+        align-items: center;
+    }
+    .footer-container{
+        background-size: cover;
+        
+    }
+    .footer-icons{
+        flex-wrap: wrap;
+    }
 }
