@@ -8,9 +8,6 @@
     display: none;
 }
 
-img {
-    width: 100%;
-}
 
 .inter-font {
     font-family: "Inter", sans-serif;
@@ -249,16 +246,47 @@ nav h4 {
 /* ------------host section---------  */
 .host-container{
     background: var(--primary-bg);
+    padding: 0 200px 120px 200px;
+}
+.host-container h4{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.host-card{
+    background: var(--secondary-bg);
+    display: flex;
+
+    align-items: center;
+    gap:24px;
+    padding: 40px;
+
 }
 .host-img{
     height: 200px;
     width:200px;
 }
+.host-icons{
+    display: flex;
+    gap: 8px;
+}
+.social{
+    width: 15px;
+    height: 15px;
+}
 .icons-h{
-    height: 26px;
-    width: 26px;
+    height: 15px;
+    width: 15px;
     border: 1px solid rgba(83, 60, 114, 1);
     border-radius: 50px;
+    padding: 5px;
+}
+.host-des p{
+    line-height: 1.5;
+}
+.host-des{
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 /* responsive media quries */
 
