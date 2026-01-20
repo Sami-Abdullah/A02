@@ -24,7 +24,7 @@ img {
     --primary-bg: rgba(26, 11, 46, 1);
     --secondary-bg: rgba(35, 14, 61, 1);
     --tertiary-bg: rgba(53, 17, 101, 0.4);
-    --green-font:rgba(0, 255, 136, 1);
+    --green-font: rgba(0, 255, 136, 1);
 }
 
 .header-text1 {
@@ -100,9 +100,11 @@ nav h4 {
     gap: 40px;
     padding: 101px 0;
 }
-.hero-banner-conten h4{
+
+.hero-banner-conten h4 {
     margin-bottom: 8px;
 }
+
 .hero-banner-content {
     text-align: center;
     margin-bottom: 24px;
@@ -115,39 +117,149 @@ nav h4 {
 
 /* -------------about poodcast------------ */
 
-.podcast-container
-{   
+.podcast-container {
     border-top: 1px solid white;
     background-color: var(--primary-bg);
     padding: 50px 200px 120px 200px;
     text-align: center;
 }
-.podcast-content h4{
-    font-size: 3rem ;
+
+.podcast-content h4 {
+    font-size: 3rem;
     font-weight: 900px;
     margin-bottom: 16px;
 }
-.podcast-content p{
+
+.podcast-content p {
     line-height: 1.5;
     margin-bottom: 80px;
 }
-.podcast-container hr{
+
+.podcast-container hr {
     opacity: 0.1;
     margin-bottom: 80px;
 }
-.review-cards{
+
+.review-cards {
     display: flex;
     justify-content: center;
-    gap:80px; 
+    gap: 80px;
 }
-.review-card h4{
+
+.review-card h4 {
     color: var(--green-font);
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 5px;
 }
 
+/* ----------why choose TechWave-------------- */
 
+.why-container {
+    background: var(--secondary-bg);
+    padding: 120px 200px;
+}
+
+.why-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 21px;
+}
+
+.card h4 {
+    margin-bottom: 16px;
+
+}
+
+.card {
+    padding: 40px;
+    text-align: left;
+    background-color: var(--tertiary-bg);
+    border-radius: 40px;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.gi1 {
+    grid-row: span 2;
+}
+
+.gi2,
+.gi3,
+.gi4 {
+    grid-column: span 2;
+}
+
+.frame-content {
+    padding: 24px;
+    background: var(--secondary-bg);
+}
+
+/* -----------featured episode---------------- */
+
+.featured-container {
+    background: var(--primary-bg);
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-container h4 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.featured-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,380px);
+    gap: 30px;
+}
+.icon-clock{
+    width: 16px;
+    height: 16px;
+}
+.clock-time{
+    color: var(--green-font);
+    font-size: 16px;
+}
+.clock-container{
+    margin-top: 12px;
+    display: flex;
+    gap:6px;
+}
+.frame-content h4{
+    text-align: left;
+}
+/* ------------host section---------  */
+.host-container{
+    background: var(--primary-bg);
+}
+.host-img{
+    height: 200px;
+    width:200px;
+}
+.icons-h{
+    height: 26px;
+    width: 26px;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50px;
+}
 /* responsive media quries */
 
 @media screen and (max-width:576px) {
