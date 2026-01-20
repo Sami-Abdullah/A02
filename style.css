@@ -49,12 +49,15 @@
 }
 
 /* main style */
+
+/* ----------navbar section--------- */
 nav{
     background: var(--primary-bg);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 16px 0;
+    border-bottom:1px solid rgba(65, 37, 103, 1);
     
 }
 nav h4{
@@ -66,12 +69,29 @@ nav h4{
     display: flex;
     justify-content: space-evenly;
     gap:32px;
+    opacity: 0.9;
 }
 
 
+/* --------hero bannar section----------- */
 
 
-
+.hero-container{
+    background:url(assets/hero-bg.png) center top no-repeat ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 101px 0;
+}
+.hero-banner-content{
+    text-align: center;
+}
+.mic-img{
+    position: absolute;
+    top: 260px;
+}
 /* responsive media quries */
 
 @media screen and (max-width:576px) {
